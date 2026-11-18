@@ -1,0 +1,47 @@
+{
+  "name": "vantawave-theme",
+  "displayName": "VantaWave \u2014 Visual Studio Code Theme",
+  "description": "A carefully balanced, high-contrast editor theme with deep ink surfaces, electric cyan accents, and vivid syntax colors. Includes Dark and Light variants.",
+  "version": "1.0.0",
+  "publisher": "RadwanAlmsora",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "light",
+    "cyan",
+    "developer",
+    "syntax"
+  ],
+  "icon": "icons/icon-128.png",
+  "galleryBanner": {
+    "color": "#101522",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "VantaWave Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/vantawave-dark-color-theme.json"
+      },
+      {
+        "label": "VantaWave Light",
+        "uiTheme": "vs",
+        "path": "./themes/vantawave-light-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "npx @vscode/vsce package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.2.2"
+  }
+}
